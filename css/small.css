@@ -1,0 +1,77 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgb(224, 224, 236);
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 175, 175);
+    padding: 1rem 2vw;
+}
+
+nav button {
+    background:rgb(118, 120, 154);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    padding: .9rem 2rem;
+    box-shadow: 5px 5px 10px rgb(46, 46, 46);
+    border-radius: 10px;
+    margin: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+nav button:hover {
+    transform: translateY(-5px) scale(1.05); /* Moves slightly upward and enlarges */
+    box-shadow: 8px 8px 15px rgb(46, 46, 46); /* Enhances the shadow effect */
+}
+
+#peopleHere {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#peopleHere figure {
+    width: 150px;
+    margin: 1rem 2%;
+    border-radius: 10px;
+}
+
+#peopleHere figure.female {
+    border: solid 2px rgb(105, 11, 11);
+    color: rgb(105, 11, 11);
+}
+
+#peopleHere figure.male {
+    border: solid 2px rgb(37, 37, 92);
+    color: rgb(37, 37, 92);
+}
+
+#peopleHere figure.other {
+    border: solid 2px rgb(37, 70, 37);
+    color: rgb(37, 70, 37);
+}
+#peopleHere img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+#peopleHere figcaption {
+    text-align: center;
+}
